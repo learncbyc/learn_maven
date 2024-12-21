@@ -12,7 +12,7 @@ This repository contains a simple Java program that prints "Hello, World!" to th
 3. Ensure that all the required JAR files (e.g., Joda-Time, Apache Commons Lang) are placed in the `lib` folder.
 4. Run the following command to compile the program, including the JAR files in the `lib` folder:
    ```
-   javac -cp "lib/*" HelloWorld.java
+   javac -cp "lib/*" com/learncbyc/learnmaven/HelloWorld.java
    ```
 - `-cp "lib/*"`: This option includes all the JAR files in the `lib` folder in the classpath during compilation.
 
@@ -22,7 +22,7 @@ This repository contains a simple Java program that prints "Hello, World!" to th
 2. Run the program using the following command:
 
    ```
-   java -cp "lib/*:." HelloWorld
+   java -cp "lib/*:." com/learncbyc/learnmaven/HelloWorld
    ```
 - `-cp "lib/*:."`: This option includes all the JAR files from the `lib` folder and the current directory (`.`) in the classpath when running the program. (Use `;` instead of `:` on Windows.)
 
@@ -30,7 +30,7 @@ This repository contains a simple Java program that prints "Hello, World!" to th
 
 1. Create a manifest file (e.g., `manifest.txt`) with the following content:
    ```
-   Main-Class: HelloWorld
+   Main-Class: com.learncbyc.learnmaven.HelloWorld
    ```
    Ensure there is a blank line at the end of the file.
 
@@ -48,7 +48,7 @@ This repository contains a simple Java program that prints "Hello, World!" to th
 
 3. Package the JAR with the compiled class and dependencies:
    ```
-   jar cfm HelloWorld.jar manifest.txt -C . HelloWorld.class -C extracted_lib .
+   jar cfm HelloWorld.jar manifest.txt -C . com/learncbyc/learnmaven/HelloWorld.class -C extracted_lib .
    ```
 
 ## Steps to Execute the JAR File
@@ -64,4 +64,3 @@ This repository contains a simple Java program that prints "Hello, World!" to th
 - `HelloWorld.class`: The compiled bytecode file created after compilation.
 - `HelloWorld.jar`: The JAR file created for executing the program.
 - `manifest.txt`: The manifest file specifying the entry point for the JAR file.
-
