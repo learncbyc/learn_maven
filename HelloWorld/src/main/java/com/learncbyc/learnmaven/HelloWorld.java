@@ -26,7 +26,7 @@ public class HelloWorld {
 
 
 
-                // Create instances of HelloState and HelloCity
+        // Create instances of HelloState and HelloCity
         HelloState helloState = new HelloState();
         HelloCity helloCity = new HelloCity();
 
