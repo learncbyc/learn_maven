@@ -5,6 +5,14 @@ Learn Maven Commit By Commit
 
 This repository contains a simple Java program that prints "Hello, World!" to the console.
 
+## Steps to Copy the dependencies
+
+1. Package HelloCity and HelloState as jar files. Instructions are in the respective README.md files
+2. Copy the HelloCity.jar and HelloState.jar to lib folder inside HelloWorld.
+   ```
+   cp HelloState/HelloState.jar HelloWorld/lib/
+   cp HelloCity/HelloCity.jar HelloWorld/lib/
+   ```
 ## Steps to Compile
 
 1. Open a terminal or command prompt.

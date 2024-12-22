@@ -3,7 +3,8 @@ import org.joda.time.LocalDate;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 import org.apache.commons.lang3.StringUtils;
-
+import com.learncbyc.learnmaven.HelloState;
+import com.learncbyc.learnmaven.HelloCity;
 
 public class HelloWorld {
     public static void main(String[] args) {
@@ -22,5 +23,15 @@ public class HelloWorld {
 
         // Print the message with the formatted date
         System.out.println(capitalizedMessage + "  on : " + formattedDate);
+
+
+
+                // Create instances of HelloState and HelloCity
+        HelloState helloState = new HelloState();
+        HelloCity helloCity = new HelloCity();
+
+        // Call their respective methods
+        helloState.displayState();
+        helloCity.displayCity();
     }
 }
