@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.learncbyc.learnmaven</groupId>
         <artifactId>learn-maven-parent</artifactId>
-        <version>1.0</version>
+        <version>1.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>helloworld</artifactId>
@@ -22,12 +22,12 @@
         <dependency>
             <groupId>com.learncbyc.learnmaven</groupId>
             <artifactId>hellostate</artifactId>
-            <version>1.0</version>
+            <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.learncbyc.learnmaven</groupId>
             <artifactId>hellocity</artifactId>
-            <version>1.0</version>
+            <version>1.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
